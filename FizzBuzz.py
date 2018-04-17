@@ -1,15 +1,14 @@
 #FizzBuzz.py by Kiliagan
 
 def fizzbuzz(num):
-	if num%15 == 0:
-		print 'FizzBuzz'
-	elif num%3 == 0:
-		print 'Fizz'
-	elif num%5 == 0:
-		print 'Buzz'
-	else:
-		print num
-
+	output = ''
+	if num%3 == 0:
+		output+= 'Fizz'
+	if num%5 == 0:
+		output+= 'Buzz'
+	if output == '':
+		output+= str(num)
+	print output
 if __name__ == "__main__":
 	i = 1
 	while i <= 100:
