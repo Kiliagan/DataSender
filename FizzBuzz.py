@@ -1,7 +1,10 @@
 #FizzBuzz.py by Kiliagan
 
 def fizzbuzz(num):
-	print num
+	if num%3 == 0:
+		print 'Fizz'
+	else:
+		print num
 
 if __name__ == "__main__":
 	i = 1
